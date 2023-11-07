@@ -1,0 +1,255 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  background-color: #132043;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 35px;
+  color: #fff;
+}
+
+.navbar button {
+  background-color: transparent;
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.style-icon {
+  width: 24px;
+  height: 24px;
+}
+.primary {
+  color: #476072;
+}
+
+.secondary {
+  color: #748da6;
+}
+
+.thirdy {
+  color: #176b87;
+}
+
+.icon-add {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table thead {
+  border-radius: 10px 10px 0 0;
+}
+#table td,
+#table th {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1f4172;
+  color: white;
+}
+
+.add-data {
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.btn-add {
+  padding: 12px 24px;
+  outline: none;
+  border: none;
+  background-color: #363062;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn-add-container {
+  text-decoration: none;
+}
+
+.sort {
+  display: flex;
+  gap: 24px;
+}
+
+.custom-select {
+  position: relative;
+  width: 250px;
+}
+
+select {
+  appearance: none;
+  /*  safari  */
+  -webkit-appearance: none;
+  /*  other styles for aesthetics */
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 13px;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.custom-select::before,
+.custom-select::after {
+  --size: 0.3rem;
+  content: "";
+  position: absolute;
+  right: 1rem;
+  pointer-events: none;
+}
+
+.custom-select::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 40%;
+}
+
+.custom-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 55%;
+}
+
+* {
+  font-family: "Heebo", sans-serif;
+}
+
+.table-home {
+  border: none !important;
+}
+
+.search-input-icon {
+  width: 18px;
+  height: 18px;
+  color: grey;
+}
+
+.search-input {
+  border: 1px solid grey;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px 13px;
+  margin-bottom: 1rem;
+}
+
+.search-input input {
+  outline: none;
+  border: none;
+  font-size: 14px;
+}
+
+.search-input input::placeholder {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.paginasi-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination-button {
+  background-color: #125d98;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  margin: 0 0px;
+  cursor: pointer;
+}
+
+.pagination-button:hover {
+  background-color: #1f4172;
+}
+
+.pagination-button.active {
+  background-color: #1f4172;
+}
+
+.pagination-ellipsis {
+  margin: 0 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.pagination-button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Style for "Prev" and "Next" buttons */
+.pagination-button:first-child {
+  margin-right: 5px;
+}
+
+.pagination-button:last-child {
+  margin-left: 5px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 1rem;
+}

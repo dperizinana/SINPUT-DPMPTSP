@@ -1,0 +1,60 @@
+.container-add {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.add-form {
+  padding: 12px 24px;
+  align-items: center;
+  width: 60%;
+}
+
+.text-center {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-file {
+  margin: 20px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 12px;
+}
+
+.btn-add-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-add-group {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form-add-group div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-add-group div input {
+  padding: 0.75rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+.form-left {
+  flex: 1;
+}
+
+.form-right {
+  flex: 1;
+}
