@@ -112,23 +112,115 @@ const AddData = () => {
             </div>
             <div>
               <label>Kecamatan:</label>
-              <input
+              <select
                 value={form.kecamatan}
                 name="kecamatan"
                 type="text"
                 onChange={handleChange}
                 required
-              />
+              >
+                <option value="Kecamatan Bukit Bestari">
+                  Kecamatan Bukti Bestari
+                </option>
+                <option value="Kecamatan Tanjungpinang Barat">
+                  Kecamatan Tanjungpinang Barat
+                </option>
+                <option value="Kecamatan Tanjungpinang Kota">
+                  Kecamatan Tanjungpinang Kota
+                </option>
+                <option value="Kecamatan Tanjungpinang Timur">
+                  Kecamatan Tanjungpinang Timur
+                </option>
+              </select>
             </div>
             <div>
               <label>Kelurahan:</label>
-              <input
-                value={form.kelurahan}
-                name="kelurahan"
-                type="text"
-                onChange={handleChange}
-                required
-              />
+              {form.kecamatan === "Kecamatan Bukit Bestari" && (
+                <select
+                  value={form.kelurahan}
+                  name="kelurahan"
+                  type="text"
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="Kelurahan Tanjungpinang Timur">
+                    Kelurahan Tanjungpinang Timur
+                  </option>
+                  <option value="Kelurahan Dompak">Kelurahan Dompak</option>
+                  <option value="Kelurahan Tanjung Ayun Sakti">
+                    Kelurahan Tanjung Ayun Sakti
+                  </option>
+                  <option value="Kelurahan Sei Jang">Kelurahan Sei Jang</option>
+                  <option value="Kelurahan Tanjung Unggat">
+                    Kelurahan Tanjung Unggat
+                  </option>
+                </select>
+              )}
+              {form.kecamatan === "Kecamatan Tanjungpinang Barat" && (
+                <select
+                  value={form.kelurahan}
+                  name="kelurahan"
+                  type="text"
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="Kelurahan Tanjungpinang Timur">
+                    Kelurahan Tanjungpinang Barat
+                  </option>
+                  <option value="Kelurahan Kemboja">Kelurahan Kemboja</option>
+                  <option value="Kelurahan Kampung Baru">
+                    Kelurahan Kampung Baru
+                  </option>
+                  <option value="Kelurahan Bukit Cermin">
+                    Kelurahan Bukit Cermin
+                  </option>
+                </select>
+              )}
+              {form.kecamatan === "Kecamatan Tanjungpinang Kota" && (
+                <select
+                  value={form.kelurahan}
+                  name="kelurahan"
+                  type="text"
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="Kelurahan Tanjungpinang Kota">
+                    Kelurahan Tanjungpinang Kota
+                  </option>
+                  <option value="Kelurahan Kampung Bugis">
+                    Kelurahan Kampung Bugis
+                  </option>
+                  <option value="Kelurahan Senggarang">
+                    Kelurahan Senggarang
+                  </option>
+                  <option value="Kelurahan Penyengat">
+                    Kelurahan Penyengat
+                  </option>
+                </select>
+              )}
+              {form.kecamatan === "Kecamatan Tanjungpinang Timur" && (
+                <select
+                  value={form.kelurahan}
+                  name="kelurahan"
+                  type="text"
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="Kelurahan Melayu Kota Piring">
+                    Kelurahan Melayu Kota Piring
+                  </option>
+                  <option value="Kelurahan Kampung Bulang">
+                    Kelurahan Kampung Bulang
+                  </option>
+                  <option value="Kelurahan Air Raja">Kelurahan Air Raja</option>
+                  <option value="Kelurahan Pinang Kencana">
+                    Kelurahan Pinang Kencana
+                  </option>
+                  <option value="Kelurahan Batu Sembilan">
+                    Kelurahan Batu Sembilan
+                  </option>
+                </select>
+              )}
             </div>
           </div>
           <div className="form-right">

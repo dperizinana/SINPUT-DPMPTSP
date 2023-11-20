@@ -46,6 +46,7 @@ export default function Table({ columns, data }) {
                       padding: "10px",
                       border: "none",
                       borderBottom: "0.5px solid #EEEEEE",
+                      textTransform: "capitalize",
                     }}
                   >
                     {cell.render("Cell")}
