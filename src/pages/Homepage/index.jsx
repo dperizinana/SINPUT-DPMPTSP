@@ -205,7 +205,7 @@ const Homepage = () => {
   return (
     <>
       <nav className="navbar">
-        <h1 className="title">SINPUT</h1>
+        <h1 className="title">SINPUT-BG</h1>
         <Link to={"/login"}>
           <button onClick={() => Cookise.removeItem("token")}>Logout</button>
         </Link>
