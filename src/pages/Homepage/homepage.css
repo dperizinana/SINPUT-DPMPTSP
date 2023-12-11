@@ -246,7 +246,7 @@ select {
 }
 
 .footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   left: 0;
   text-align: left;

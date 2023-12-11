@@ -119,6 +119,7 @@ const AddData = () => {
                 onChange={handleChange}
                 required
               >
+                <option value="">Pilih Kecamatan</option>
                 <option value="Kecamatan Bukit Bestari">
                   Kecamatan Bukti Bestari
                 </option>
@@ -143,6 +144,9 @@ const AddData = () => {
                   onChange={handleChange}
                   required
                 >
+                  <option value="" disabled>
+                    Pilih Kelurahan
+                  </option>
                   <option value="Kelurahan Tanjungpinang Timur">
                     Kelurahan Tanjungpinang Timur
                   </option>
@@ -164,6 +168,9 @@ const AddData = () => {
                   onChange={handleChange}
                   required
                 >
+                  <option value="" disabled>
+                    Pilih Kelurahan
+                  </option>
                   <option value="Kelurahan Tanjungpinang Timur">
                     Kelurahan Tanjungpinang Barat
                   </option>
@@ -184,6 +191,9 @@ const AddData = () => {
                   onChange={handleChange}
                   required
                 >
+                  <option value="" disabled>
+                    Pilih Kelurahan
+                  </option>
                   <option value="Kelurahan Tanjungpinang Kota">
                     Kelurahan Tanjungpinang Kota
                   </option>
@@ -206,6 +216,9 @@ const AddData = () => {
                   onChange={handleChange}
                   required
                 >
+                  <option value="" disabled>
+                    Pilih Kelurahan
+                  </option>
                   <option value="Kelurahan Melayu Kota Piring">
                     Kelurahan Melayu Kota Piring
                   </option>
